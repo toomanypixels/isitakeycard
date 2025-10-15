@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>is it a keycard</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+</head>
+
+<body role="region" id="main-body" role="section">
+    <div id='main'>
+        <div id = 'header'>
+        <img src="assets/logo.svg" width="8%" height="8%" alt="is it a keycard logo" role="img"
+            aria-label="is it a keycard logo">
+        <h1 id="title"> is it a keycard </h1>
+        <button id="dark-mode-toggle">Dark Mode</button>
+        </div>
+        
+        <div id='table-options'>
+            <p aria-label="description">a growing list of keycards on the nintendo switch 2 system</p>
+            
+            <label>Look up a game:
+                <input alt="search bar" type="search" class="fuzzy-search" id="search-bar" placeholder="search"
+                    style="font-family: Crealto Regular;" aria-label="search bar">
+            </label>
+        </div>
+
+        <table id="main-table" role="table"
+            aria-label="a table containing all game keycards released and to be released">
+            <thead id='main-table-header'>
+                <tr style="text-align: left;">
+                    <th class="sort" data-sort="game" style="cursor: pointer;">Game Title </th>
+                    <th class="sort" data-sort="publisher" style="cursor: pointer;">Publisher</th>
+                    <th class="sort" data-sort="ts" style="cursor: pointer;">Release Date</th>
+                </tr>
+            </thead>
+            <tbody id="main-table-body" class="list">
+
+            </tbody>
+        </table>
+        <p aria-label="footer description" style="text-align: center;">if there are any discrepancies on the information
+            provided or if you are
+            experiencing bugs/glitches please open an issue <br>
+            on <a href="github.com/toomanypixels/isitakeycard/issues">Github</a> </p>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
