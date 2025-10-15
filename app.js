@@ -28,7 +28,6 @@ async function getData(url) {
 
         col1Data.innerHTML = data[index]['game'].trim()
         col2Data.innerHTML = data[index]['publisher'].trim()
-        //col3Data.innerHTML = data[index]['ts']
         col1Data.setAttribute("class", "game")
         col2Data.setAttribute("class", "publisher")
 
@@ -50,23 +49,6 @@ async function getData(url) {
         valueNames: ['game', 'publisher', 'ts']
       });
     })
-    // .then(() => {
-    //   $('#main-table').DataTable({
-    //     layout: {
-    //       topStart: 'pageLength',
-    //       topEnd: {
-    //         search:{
-    //           placeholder:'search' 
-    //         }
-    //       }
-    //     }
-    //   });
-      
-    //   // $('tr:nth-child(even)').css("background-color", "#c4c4c4ff")
-    //   // $('tr:nth-child(odd)').css("background-color", "#fffff")
-     
-    // })
-   
   .catch(error => console.error(error))
 }
 
@@ -84,18 +66,13 @@ $("#search-bar").on('keyup', function() {
 
 
 dark_mode_toggle.onclick = function toggleDarkMode() {
-    
-    console.log(main_body)
-
     if (main_body.classList.contains("active")){
-      console.log("active")
       main_body.classList.remove("active")
       main_body.classList.add("inactive")
-       dark_mode_toggle.innerHTML = "Dark Mode"
+      dark_mode_toggle.innerHTML = "Dark Mode"
       
     }
     else{
-      console.log("inactive")
       main_body.classList.remove("inactive")
       main_body.classList.add("active")
       dark_mode_toggle.innerHTML = "Light Mode"
