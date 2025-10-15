@@ -133,3 +133,11 @@ tbody>tr:nth-child(odd){
 }
 
 
+@media (pointer:none), (pointer:coarse) {
+    #main{
+    width: 100%;
+    position: static;
+    margin: auto;
+    
+}
+}
